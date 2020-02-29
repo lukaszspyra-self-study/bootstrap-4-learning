@@ -13,6 +13,23 @@
   </head>
   <body>
 
+<!-- Navbar section -->
+    <nav class="navbar navbar-expand-md bg-info navbar-light">
+      <div class="container">
+        <button class="navbar-toogler" data-toggle="collapse" data-target="#mainNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#">Home</a>
+            <a class="nav-item nav-link" href="#">About</a>
+            <a class="nav-item nav-link" href="#">Training</a>
+            <a class="nav-item nav-link" href="#">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
     <div class="jumbotron jumbotron-fluid bg-info text-white text-center"    style="background: #aaa;">
       <div class="container"> 
         <h1 class="display-1">Welcome to the Dojo</h1>
@@ -74,7 +91,7 @@
         <div class="tab-content py-5">
           <div class="tab-pane active" id="ninja">
             <h3>The Net Ninja</h3>
-            <p>1. Lorem ipsum dolor sit, amet consectetur adipisicing elit. At optio voluptas, itaque vel, eveniet amet voluptate dolores odio fuga provident modi dolorum voluptatibus eius quisquam hic saepe officiis labore asperiores.</p>
+            <p>1. Lorem ipsum <span data-toggle="tooltip" title="this is a tooltip" class="text-info" data-placement="bottom"> sit, amet consectetur </span> adipisicing elit. At optio voluptas, itaque vel, eveniet amet voluptate dolores odio fuga provident modi dolorum voluptatibus eius quisquam hic saepe officiis labore asperiores.</p>
           </div>
           <div class="tab-pane" id="wizard">
             <h3>The Web wizard</h3>
@@ -96,6 +113,13 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
 
   </body>
 </html>
